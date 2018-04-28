@@ -11,8 +11,15 @@ namespace ActivityTracker.Utility
 
     public class Auth0UserInfo
     {
+        /// <summary>
+        /// This is code used to get user information from an access code. The static nature means we do not have to "new" it up and instead can call it directly. The async Task<User> is
+        ///  code to allow better handling of long tasks. Outside the scope of this document but if you see async method you await on it.
+        /// </summary>
+        /// <param name="accessToken">The code to authorize against the api</param>
+        /// <returns>User</returns>
         public static async Task<User> GetUserInfo(string accessToken)
         {
+
             var getToken = new HttpClient();
             getToken.DefaultRequestHeaders.Clear();
             getToken.DefaultRequestHeaders.Add("Authorization", accessToken);
@@ -37,6 +44,11 @@ namespace ActivityTracker.Utility
             return user;
         }
 
+        /// <summary>
+        /// Returns the user account in the database for a given token
+        /// </summary>
+        /// <param name="accessToken">The access token contains the unique id but nothing else</param>
+        /// <returns>User Account</returns>
         public static string GetUserID(string accessToken)
         {
             var tokenHandler = new JwtSecurityTokenHandler();

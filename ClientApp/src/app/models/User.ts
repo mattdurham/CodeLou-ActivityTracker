@@ -1,11 +1,9 @@
-
-
 interface User {
-    Id: number;
-    UniqueID: string;
-    Email: string;
-    Photo: string;
-    FirstName: string;
-    LastName: string;
-    Nickname: string;
+  id: number;
+  uniqueID: string;
+  email: string;
+  photo: string;
+  firstName: string;
+  lastName: string;
+  nickname: string;
 }
