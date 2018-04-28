@@ -1,6 +1,6 @@
 # Activity Tracker Setup
 
-1.  Install (dotnet core)[https://www.microsoft.com/net/download/windows]
+1.  Install [dotnet core][https://www.microsoft.com/net/download/windows]
 2.  Install (NPM)[https://www.npmjs.com/get-npm]
 3.  Install angular cli - run 'npm install -g @angular/cli' from command line
 4.  Install (Visual Studio Code)[https://code.visualstudio.com/]
