@@ -1,0 +1,33 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'start',
+1 verbose cli   '--',
+1 verbose cli   '--port',
+1 verbose cli   '52700' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.0
+4 verbose run-script [ 'prestart', 'start', 'poststart' ]
+5 info lifecycle ActivityTracker@0.0.0~prestart: ActivityTracker@0.0.0
+6 silly lifecycle ActivityTracker@0.0.0~prestart: no script for prestart, continuing
+7 info lifecycle ActivityTracker@0.0.0~start: ActivityTracker@0.0.0
+8 verbose lifecycle ActivityTracker@0.0.0~start: unsafe-perm in lifecycle true
+9 verbose lifecycle ActivityTracker@0.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/mattdurham/Source/CodeLou-ActivityTracker-2018May/ClientApp/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/share/dotnet
+10 verbose lifecycle ActivityTracker@0.0.0~start: CWD: /Users/mattdurham/Source/CodeLou-ActivityTracker-2018May/ClientApp
+11 silly lifecycle ActivityTracker@0.0.0~start: Args: [ '-c', 'ng serve --extract-css "--port" "52700"' ]
+12 verbose stack Error: write EPIPE
+12 verbose stack     at exports._errnoException (util.js:1018:11)
+12 verbose stack     at WriteWrap.afterWrite (net.js:800:14)
+13 verbose cwd /Users/mattdurham/Source/CodeLou-ActivityTracker-2018May/ClientApp
+14 error Darwin 17.5.0
+15 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "start" "--" "--port" "52700"
+16 error node v6.11.0
+17 error npm  v3.10.10
+18 error code EPIPE
+19 error errno EPIPE
+20 error syscall write
+21 error write EPIPE
+22 error If you need help, you may report this error at:
+22 error     <https://github.com/npm/npm/issues>
+23 verbose exit [ 1, true ]
